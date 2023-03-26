@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "MyAnime";
+}
+@model SqlMvc.Models.AnimeChars
+@using (Html.BeginForm("AddDets", "SqlData"))
+{
+    <div>
+    <label>Id:</label>
+    <input type="text" name="Id" /></div>
+    <div>
+        <label>Name:</label>
+        <input type="text" name="Name" />
+    </div>
+    <div>
+    <label>Anime:</label>
+    <input type="text" name="Anime" />
+    </div>
+    <input type="submit"/>
+}
+
